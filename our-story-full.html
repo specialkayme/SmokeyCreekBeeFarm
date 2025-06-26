@@ -30,9 +30,25 @@
             color: #3D2E24;
         }
         .btn-primary {
-            @apply inline-block px-10 py-4 rounded-full text-white font-semibold text-lg transition-all duration-300 ease-in-out hover:scale-105;
-            background-image: linear-gradient(to right, #CC8C2D, #e6b96c);
-            box-shadow: 0 6px 20px rgba(204, 140, 45, 0.4);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600; /* semibold */
+            font-size: 1.125rem; /* text-lg */
+            background-color: #D4A753; /* Unified Honey Gold from index */
+            color: white; /* Unified White text */
+            border-radius: 9999px !important; /* FORCED FULL ROUNDING */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow from index */
+            transition: all 0.2s ease-in-out; /* Smooth transition */
+            text-align: center; /* Center text within button */
+            white-space: nowrap; /* Prevent text wrapping within button */
+            padding: 18px 50px; /* Large button size like index */
+            min-width: 280px; /* Ensures consistent horizontal oval */
+        }
+        .btn-primary:hover {
+            background-color: #CC8C2D; /* Darker honey gold on hover */
+            transform: translateY(-1px) scale(1.01); /* Very subtle lift and slight scale */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly more prominent shadow on hover */
         }
         .btn-secondary {
             @apply inline-block px-10 py-4 rounded-full border-2 border-dark-brown text-dark-brown font-semibold text-lg transition-all duration-300 ease-in-out hover:bg-dark-brown hover:text-white hover:shadow-md;
